@@ -1,0 +1,179 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ background-image: url('Pictures/tela_login.jpg'); 
+ background-size: cover; /* Para cobrir todo o fundo */
+ background-position: center center; /* Para centralizar a imagem horizontal e verticalmente */
+}
+
+
+
+.container2 {
+    max-width: 100%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-top: 0;
+    color: #007bff;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+
+label {
+    color: #333;
+}
+/*Esqueceu sua senha?*/
+.forgot-password {
+    display: block;
+    text-align: center;
+    margin-top: 25px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+
+/* Estilo dos ícones */
+.input-group-text {
+    background-color: #fff;
+}
+
+
+.form-control {
+    border-left: none; 
+    border-radius: 0; 
+}
+
+/* Estilo dos botões */
+.btn {
+    border: 2px solid #007bff; 
+    color: #007bff; 
+    background-color: transparent; 
+    border-radius: 5px; 
+    transition: all 0.3s ease;
+    margin-right: 5px;
+}
+
+.btn-custom {
+    border-color: #007bff; 
+    color: #007bff; 
+}
+
+/* Estilo dos botões quando passa o mouse */
+.btn-custom:hover {
+    background-color: #005de7; 
+    color: #fff; 
+    border-color: #005de7; 
+}
+@keyframes slideIn {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.logo {
+    animation: slideIn 1s ease-in-out forwards;
+    animation-delay: 0s; 
+}
+.logo {
+    max-width: 100%;
+    height: auto;
+    animation: slideIn 1s ease-in-out forwards;
+    animation-delay: 0s; 
+}
+
+/* Estilos para telas de celular */
+@media only screen and (max-width: 767px) {
+    .logo {
+        width: 100%;
+        position: relative;
+        display: table; 
+        height: auto;
+        display: table;
+      
+      
+      
+        
+    }
+    div.container2{
+        width: 60%;
+        float: none;
+        position: relative;
+        display: table;
+        margin: 10% auto;
+      
+    }
+    body{
+        display: table;
+        justify-content: center;
+    }
+}
+
+/* Estilos para telas de tablet */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .logo {
+        max-width: 250px; /* Ajuste o tamanho conforme necessário para telas de tablet */
+      
+    }
+    body{
+        display: flex;
+        justify-content: center;
+    }
+}
