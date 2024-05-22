@@ -1,8 +1,12 @@
-CREATE TABLE cadastro (
-    ID_cadastro INT AUTO_INCREMENT PRIMARY KEY,
-    Nome_cadastro VARCHAR(100) NOT NULL,
-    Email_cadastro VARCHAR(100) NOT NULL UNIQUE,
-    Senha_cadastro VARCHAR(60) NOT NULL
+create database dbFecap;
+use dbFecap;
+drop database dbFecap;
+
+CREATE TABLE users (
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(100) NOT NULL,
+    name VARCHAR(100) NOT NULL UNIQUE,
+    password VARCHAR(60) NOT NULL
     );
 
 CREATE TABLE login (
